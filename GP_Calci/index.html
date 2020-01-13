@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		GP Calci
+	</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<h1>GP Calculator</h1>
+<p>Choose your grade and click on the tick button. Repeat for all subjects and then click Calculate button.</p>
+   
+  <form action="#" method="post" id="demoForm" class="demoForm">
+
+ 
+        
+        <p>
+            <div>MATHS</div>
+            <select id="maths" class="dropdown" name="scripts">
+                <option value="O">O</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="RA">RA</option>
+            </select>
+            
+            <input type="text" size="30" name="display" id="display1" />
+            <input type="text" size="30" name="display" id="credits1" />
+
+        
+
+        
+            <button type="button" class="btn btn-success" id="doLoop1">
+            	<span class="fa fa-check" aria-hidden="true"></span>
+            </button> 
+        </p>
+
+
+        <p>
+            <div>DLD</div>
+            <select id="dld" name="scripts" class="dropdown	">
+                <option value="O">O</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="RA">RA</option>
+            </select>
+            
+            <input type="text" size="30" name="display" id="display2" />
+            <input type="text" size="30" name="display" id="credits2" />
+       
+            
+            <button type="button" class="btn btn-success" id="doLoop2">
+            	<span class="fa fa-check" aria-hidden="true"></span>
+            </button> 
+        </p>
+     
+        <p>
+            <div>ECE</div>
+            <select id="ece" name="scripts" class="dropdown">
+                <option value="O">O</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="RA">RA</option>
+            </select>
+            
+            <input type="text" size="30" name="display" id="display3" />
+            <input type="text" size="30" name="display" id="credits3" />
+       
+           <button type="button" class="btn btn-success" id="doLoop3">
+            	<span class="fa fa-check" aria-hidden="true"></span>
+            </button> 
+        </p>
+    
+        <p>
+            <div>MPMC</div>
+            <select id="mpmc" name="scripts" class="dropdown">
+                <option value="O">O</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="RA">RA</option>
+            </select>
+            
+            <input type="text" size="30" name="display" id="display4" />
+            <input type="text" size="30" name="display" id="credits4" />
+        <button type="button" class="btn btn-success" id="doLoop4">
+            	<span class="fa fa-check" aria-hidden="true"></span>
+            </button> 
+   
+        </p>
+
+        <p>
+           <div>DSA</div>
+            <select id="dsa" name="scripts" class="dropdown">
+                <option value="O">O</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="RA">RA</option>
+            </select>
+            
+            <input type="text" size="30" name="display" id="display5" />
+            <input type="text" size="30" name="display" id="credits5" />
+       
+           <button type="button" class="btn btn-success" id="doLoop5">
+            	<span class="fa fa-check" aria-hidden="true"></span>
+            </button> 
+        </p>
+  
+        </p>
+
+        <p>
+            <div>OOPS</div>
+            <select id="oops" name="scripts" class="dropdown">
+                <option value="O">O</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="RA">RA</option>
+            </select>
+            
+            <input type="text" size="30" name="display" id="display6" />
+            <input type="text" size="30" name="display" id="credits6" />
+    
+           <button type="button" class="btn btn-success" id="doLoop6">
+            	<span class="fa fa-check" aria-hidden="true"></span>
+            </button> 
+        </p>
+       
+
+        <p>
+            <div>DLD LAB</div>
+            <select id="dldlab" name="scripts" class="dropdown">
+                <option value="O">O</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="RA">RA</option>
+            </select>
+            
+            <input type="text" size="30" name="display" id="display7" />
+            <input type="text" size="30" name="display" id="credits7" />
+       
+
+        <button type="button" class="btn btn-success" id="doLoop7">
+            	<span class="fa fa-check" aria-hidden="true"></span>
+            </button> 
+        </span>
+  
+        </p>
+
+        <p>
+           <div>DSA LAB</div>
+            <select id="dsalab" name="scripts" class="dropdown">
+                <option value="O">O</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="RA">RA</option>
+            </select>
+            
+            <input type="text" size="30" name="display" id="display8" />
+            <input type="text" size="30" name="display" id="credits8" />
+        
+        <button type="button" class="btn btn-success" id="doLoop8">
+            	<span class="fa fa-check" aria-hidden="true"></span>
+            </button> 
+        
+        </p>
+     
+        <button type="button" class="btn btn-primary" id="Submit" data-toggle="modal" data-target="#myModal">
+            	<span class="fa fa-pencil-square-o" aria-hidden="true"> Calculate GPA</span>
+         </button> 
+        
+
+ 
+
+
+
+
+        <input type="text" size="30" name="display" id="total" value="Total Points" />
+        <input type="text" size="30" name="display" id="gpa" value="Your GPA"/>
+        
+
+
+<div id="alert">
+	
+</div>
+
+
+
+
+
+
+ 
+</form>
+<script src="math.min.js"></script>
+
+<script src="script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

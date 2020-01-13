@@ -1,0 +1,153 @@
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ * Licensed under the MIT License
+ *
+ * Sass/SCSS source: https://goo.gl/qEV26
+ * PSD by Hemn Chawroka: https://goo.gl/nXZHJ
+ */
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+body {
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: white;
+  
+  border: 5px solid #26004d;
+  padding: 5px;
+  background: linear-gradient(-45deg, #1e7852, #e73c7f, #23a6dd, #23e5ab );
+  background-size: 400% 400%;
+          animation: gradientBG 10s ease infinite;
+
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 28px;
+  width: 50px;
+  background:  #e6ccff;
+  border: 2px solid;
+  border-color: white #5200cc whitesmoke;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown:before, .dropdown:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #2a02b0 transparent;
+  pointer-events: none;
+}
+
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.dropdown-select {
+  position: relative;
+  width: 130%;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #62717a;
+  text-shadow: 0 1px white;
+  background: #f2f2f2; /* Fallback for IE 8 */
+  background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+
+#display1,#credits1,#display2,#credits2,#display3,#credits3,#display4,#credits4,#display5,#credits5,#display6,#credits6,#display7,#credits7,#display8,#credits8{
+  max-width : 50px;
+  background-color: #e6ccff;
+  
+}
+div {
+  
+  font-family: 'Pacifico', cursive;
+  font-size: 16px;
+  font-weight: 50px;
+  color: white;
+  margin-right: 5px;
+  align-content: center;
+  width: 100px;
+  margin: 10px 10px;
+}
+
+div > p  {
+  color: black;
+}
+h4 {
+ color: black; 
+}
+#Submit {
+  font-family: sans-serif;, cursive;
+  font: 20px bold;
+  margin: 10px;
+}
+
+#alert{
+  display:  none;
+  background-color: #5a23a1;
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  font-family: Helvetica;
+  font-size: 20px;
+  animation: faded 0.5s infinite;
+  text-align: center;
+
+}
+@keyframes faded{
+  0%{
+    filter: blur(1px);
+    background-color: red;
+
+  }
+  30%{
+    filter: blur(0.5px);
+    background-color: blue;
+  } 
+  69%{
+    filter: blur(0px);
+    background-color: magenta;
+  }
+  100%{
+    filter: blur(0.5px);
+    background-color: #5a23a1;
+  }
+}
