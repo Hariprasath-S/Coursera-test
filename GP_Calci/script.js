@@ -103,6 +103,12 @@
     var sum = math.sum(el1.value, el2.value , el3.value , el4.value , el5.value , el6.value , el7.value , el8.value);
     total.value=sum;
     var avg = document.getElementById("gpa");
+    if(el1.value === "NaN"){
+        var alert=document.getElementById("alert");
+        alert.style.display = 'block';
+        alert.innerHTML = "No GPA"; 
+    }
+        
     if(sum >= 138) {
         avg.value = math.round(sum/23 , 4);
         var alert=document.getElementById("alert");
@@ -111,7 +117,9 @@
 
     }
     else{
-        avg.value = 0;
+        var alert=document.getElementById("alert");
+        alert.style.display = 'block';
+        alert.innerHTML = "No GPA"; 
     }
     
 }

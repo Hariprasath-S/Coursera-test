@@ -12,7 +12,8 @@ body {
   color: white;
   
   border: 5px solid #26004d;
-  padding: 5px;
+ 
+  padding: 8px;
   background: linear-gradient(-45deg, #1e7852, #e73c7f, #23a6dd, #23e5ab );
   background-size: 400% 400%;
           animation: gradientBG 10s ease infinite;
@@ -115,7 +116,7 @@ h4 {
  color: black; 
 }
 #Submit {
-  font-family: sans-serif;, cursive;
+  font-family: sans-serif cursive;
   font: 20px bold;
   margin: 10px;
 }
@@ -124,7 +125,7 @@ h4 {
   display:  none;
   background-color: #5a23a1;
   width: 90%;
-  height: 50px;
+  height: 60px;
   padding: 10px;
   font-family: Helvetica;
   font-size: 20px;
@@ -136,18 +137,26 @@ h4 {
   0%{
     filter: blur(1px);
     background-color: red;
+    border: 5px dashed blue;
+    border-radius: 2px; 
 
   }
   30%{
     filter: blur(0.5px);
     background-color: blue;
+    border: 5px dashed red;
+    border-radius: 2px; 
   } 
   69%{
     filter: blur(0px);
     background-color: magenta;
+    border: 5px dashed #4900a8;
+    border-radius: 2px; 
   }
   100%{
     filter: blur(0.5px);
-    background-color: #5a23a1;
+    background-color: #4900a8;
+    border: 5px dashed magenta;
+    border-radius: 2px;
   }
 }
